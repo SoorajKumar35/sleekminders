@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scrollview_grad_back"
+    xmlns:android="http://schemas.android.com/apk/res/android"> -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scrollview_grad_back"
+
+    >
+
+    <TextView
+        android:layout_marginTop="34dp"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:text="Title"
+        android:width = "80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_editsection_round_rect_shape"
+        android:id="@+id/new_title"
+        android:layout_width="wrap_content"
+        android:textColor="#ffff"
+        android:layout_below="@+id/edit_sec_toolbar"
+        android:layout_alignRight="@+id/b_create"
+        android:layout_alignEnd="@+id/b_create" />
+
+    <EditText
+        android:background="@drawable/all_edtext_rrc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height = "25dp"
+        android:width = "350dp"
+        android:textAlignment="center"
+        android:layout_below="@id/new_title"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id = "@+id/new_ed_title"
+
+        />
+
+    <TextView
+        android:text="Day"
+        android:background="@drawable/title_editsection_round_rect_shape"
+        android:width = "45dp"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_ed_title"
+        android:layout_alignLeft="@+id/new_ed_title"
+        android:layout_alignStart="@+id/new_ed_title"
+        android:id="@+id/new_day" />
+
+    <TextView
+        android:text="Month"
+        android:width = "55dp"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:background="@drawable/title_editsection_round_rect_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/new_day"
+        android:layout_toLeftOf="@+id/new_title"
+        android:layout_toStartOf="@+id/new_title"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:id="@+id/new_month" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_day"
+        android:layout_marginTop="12dp"
+        android:id="@+id/new_day_spin"
+        android:layout_alignLeft="@+id/new_day"
+        android:layout_alignStart="@+id/new_day"
+        android:layout_alignRight="@+id/new_day"
+        android:layout_alignEnd="@+id/new_day" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/new_day_spin"
+        android:layout_alignLeft="@+id/new_month"
+        android:layout_alignStart="@+id/new_month"
+        android:id="@+id/new_month_spin"
+        android:layout_alignRight="@+id/new_month"
+        android:layout_alignEnd="@+id/new_month" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/new_month_spin"
+        android:layout_alignLeft="@+id/new_year"
+        android:layout_alignStart="@+id/new_year"
+        android:id="@+id/new_year_spin"
+        android:layout_alignRight="@+id/new_year"
+        android:layout_alignEnd="@+id/new_year" />
+
+    <TextView
+        android:text="Minute"
+        android:background="@drawable/title_editsection_round_rect_shape"
+        android:width = "45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:id="@+id/new_min"
+        android:layout_alignBaseline="@+id/new_hour"
+        android:layout_alignBottom="@+id/new_hour"
+        android:layout_alignRight="@+id/new_ed_title"
+        android:layout_alignEnd="@+id/new_ed_title" />
+
+    <TextView
+        android:text="Hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_editsection_round_rect_shape"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:width = "45dp"
+        android:id="@+id/new_hour"
+        android:layout_alignBaseline="@+id/new_year"
+        android:layout_alignBottom="@+id/new_year"
+        android:layout_toRightOf="@+id/new_title"
+        android:layout_toEndOf="@+id/new_title"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp" />
+
+    <TextView
+        android:text="Year"
+        android:background="@drawable/title_editsection_round_rect_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_year"
+        android:width = "45dp"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:layout_alignBaseline="@+id/new_month"
+        android:layout_alignBottom="@+id/new_month"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/new_day_spin"
+        android:id="@+id/new_hour_spin"
+        android:layout_alignRight="@+id/new_hour"
+        android:layout_alignEnd="@+id/new_hour"
+        android:layout_alignLeft="@+id/new_hour"
+        android:layout_alignStart="@+id/new_hour" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/new_day_spin"
+        android:layout_alignRight="@+id/new_min"
+        android:layout_alignEnd="@+id/new_min"
+        android:id="@+id/new_min_spin"
+        android:layout_alignLeft="@+id/new_min"
+        android:layout_alignStart="@+id/new_min" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Optional"
+        android:ems="10"
+        android:layout_marginTop="32dp"
+        android:id="@+id/new_ed_addr"
+        android:background="@drawable/all_edtext_rrc"
+        android:height = "25dp"
+        android:width = "350dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_below="@+id/address_ID2"
+        android:layout_alignLeft="@+id/new_day_spin"
+        android:layout_alignStart="@+id/new_day_spin" />
+
+    <TextView
+        android:text="Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/address_ID2"
+        android:background="@drawable/title_editsection_round_rect_shape"
+        android:width="75dp"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="18sp"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/new_year_spin"
+        android:layout_toLeftOf="@+id/new_hour"
+        android:layout_toStartOf="@+id/new_hour" />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/edit_sec_toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_editsection_round_rect_shape"
+        android:layout_marginTop="40dp"
+        android:id="@+id/new_tv_color"
+        android:width="355dp"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:layout_below="@+id/new_ed_addr"
+        android:layout_alignRight="@+id/b_create"
+        android:layout_alignEnd="@+id/b_create"
+        android:layout_alignLeft="@+id/address_ID2"
+        android:layout_alignStart="@+id/address_ID2" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/new_color_spin"
+        android:layout_below="@+id/new_tv_color"
+        android:layout_alignRight="@+id/address_ID2"
+        android:layout_alignEnd="@+id/address_ID2"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp" />
+
+    <Button
+        android:text="Create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_create"
+        android:elevation="24dp"
+        style="@style/Widget.AppCompat.Button"
+        android:background="@drawable/button_shape"
+        android:layout_below="@+id/new_color_spin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+
+</RelativeLayout>
+<!--</ScrollView>-->

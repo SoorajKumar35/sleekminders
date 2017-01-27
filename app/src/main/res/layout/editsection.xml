@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:text="Enter the title of the reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:id="@+id/tv_title"
+        android:width="320dp"
+        android:layout_centerVertical="false"
+        android:fontFamily="serif"
+        android:textSize = "20dp"
+        android:textAlignment="center"
+        android:background="#FFFF" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/ed_title"
+        android:width="320dp"
+        android:textAlignment="textStart"
+        android:layout_gravity = "start"
+        android:padding="0dp"
+        android:background="#696969" />
+
+    <TextView
+        android:text="Year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_title"
+        android:layout_alignLeft="@+id/ed_title"
+        android:layout_alignStart="@+id/ed_title"
+        android:layout_marginTop="58dp"
+        android:id="@+id/tv_year"
+        android:fontFamily="serif"
+        android:textSize = "20dp"
+        android:textAlignment="center"
+        android:background="#FFFF"
+        />
+
+    <TextView
+        android:text="Month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_year"
+        android:layout_toRightOf="@+id/tv_year"
+        android:layout_toEndOf="@+id/tv_year"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:id="@+id/tv_month"
+        android:fontFamily="serif"
+        android:textSize = "20dp"
+        android:textAlignment="center"
+        android:background="#FFFF"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignLeft="@+id/tv_month"
+        android:layout_alignStart="@+id/tv_month"
+        android:id="@+id/ed_month"
+        android:layout_alignRight="@+id/tv_month"
+        android:layout_alignEnd="@+id/tv_month"
+        android:layout_alignTop="@+id/ed_year"
+        android:textAlignment="textStart"
+        android:padding="0dp"
+        android:layout_gravity = "start"
+        android:background="#696969"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/ed_year"
+        android:textAlignment="textStart"
+        android:layout_gravity = "start"
+        android:padding="0dp"
+        android:background="#696969"
+        android:layout_below="@+id/tv_year"
+        android:layout_alignLeft="@+id/tv_year"
+        android:layout_alignStart="@+id/tv_year"
+        android:layout_marginTop="45dp"
+        android:layout_toLeftOf="@+id/tv_month"
+        android:layout_toStartOf="@+id/tv_month" />
+
+    <TextView
+        android:text="Day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_month"
+        android:layout_toEndOf="@+id/tv_month"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:id="@+id/tv_day"
+        android:layout_alignBottom="@+id/tv_month"
+        android:layout_alignTop="@+id/tv_month"
+        android:background="#FFFF"
+        android:fontFamily="serif"
+        android:textSize = "20dp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignTop="@+id/ed_month"
+        android:layout_alignLeft="@+id/tv_day"
+        android:layout_alignStart="@+id/tv_day"
+        android:id="@+id/ed_day"
+        android:layout_alignRight="@+id/tv_day"
+        android:layout_alignEnd="@+id/tv_day"
+        android:layout_alignBottom="@+id/ed_month"
+        android:background="#696969"
+        />
+
+    <TextView
+        android:text="Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ed_title"
+        android:layout_alignEnd="@+id/ed_title"
+        android:id="@+id/tv_time"
+        android:layout_alignTop="@+id/tv_day"
+        android:layout_alignBottom="@+id/tv_day"
+        android:background="#FFFF"
+        android:fontFamily="serif"
+        android:textSize = "20dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignTop="@+id/ed_day"
+        android:layout_alignLeft="@+id/tv_time"
+        android:layout_alignStart="@+id/tv_time"
+        android:id="@+id/ed_time"
+        android:layout_alignRight="@+id/tv_time"
+        android:layout_alignEnd="@+id/tv_time"
+        android:layout_alignBottom="@+id/ed_day"
+        android:background="#696969"
+        />
+
+    <Button
+        android:text="Create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_create"
+        android:onClick="onClick"
+        android:width = "120dp"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/ed_day"
+        android:layout_alignRight="@+id/ed_time"
+        android:layout_alignEnd="@+id/ed_time" />
+
+    <Button
+        android:text="Preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_preview"
+        android:width = "120dp"
+        android:layout_alignLeft="@+id/ed_year"
+        android:layout_alignStart="@+id/ed_year"
+        android:layout_alignBottom="@+id/b_create" />
+
+</RelativeLayout>
